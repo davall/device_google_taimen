@@ -47,6 +47,7 @@ BOARD_KERNEL_CMDLINE += raid=noautodetect
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := clang-stable
 TARGET_KERNEL_SOURCE := kernel/google/taimen
+#TARGET_KERNEL_CONFIG := noob_defconfig
 TARGET_KERNEL_CONFIG := flash-taimen_defconfig
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.lz4-dtb
