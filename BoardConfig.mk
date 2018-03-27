@@ -196,7 +196,7 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 105
 #   Also checks that BOARD_AVB_ENABLE is not set, to prevent adding verity
 #   metadata into system.img.
 
-BOARD_AVB_ENABLE := true
+# BOARD_AVB_ENABLE := true
 BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 TARGET_NO_BOOTLOADER ?= true
 TARGET_NO_RECOVERY := true
