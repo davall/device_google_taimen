@@ -203,7 +203,6 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 AVB_VBMETA_IMAGE_FLAGS_HASHTREE_DISABLED := true
 AVB_VBMETA_IMAGE_FLAGS_VERIFICATION_DISABLED := true
-BOARD_BUILD_DISABLED_VBMETAIMAGE := true
 # Partitions (listed in the file) to be wiped under recovery.
 TARGET_RECOVERY_WIPE := device/google/wahoo/recovery.wipe
 TARGET_RECOVERY_FSTAB := device/google/wahoo/fstab.hardware
