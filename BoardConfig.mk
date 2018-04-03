@@ -44,7 +44,6 @@ BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware
 BOARD_KERNEL_CMDLINE += loop.max_part=7
 BOARD_KERNEL_CMDLINE += raid=noautodetect
 
-
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := clang-stable
 TARGET_KERNEL_SOURCE := kernel/google/taimen
@@ -174,10 +173,10 @@ BOARD_VNDK_VERSION := current
 
 # sepolicy
 BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
-# BOARD_SEPOLICY_DIRS += device/google/wahoo/sepolicy/vendor
-# BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/google/wahoo/sepolicy/public
-# BOARD_PLAT_PRIVATE_SEPOLICY_DIR := device/google/wahoo/sepolicy/private
-# BOARD_SEPOLICY_DIRS += device/google/wahoo/sepolicy/verizon
+BOARD_SEPOLICY_DIRS += device/google/wahoo/sepolicy/vendor
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR := device/google/wahoo/sepolicy/public
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR := device/google/wahoo/sepolicy/private
+BOARD_SEPOLICY_DIRS += device/google/wahoo/sepolicy/verizon
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
