@@ -33,6 +33,7 @@ include device/google/wahoo/device.mk
 # IMS
 PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
+    messaging \
     RcsService \
     PresencePolling
 
